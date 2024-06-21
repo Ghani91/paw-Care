@@ -96,3 +96,18 @@ a {
 .link:hover::after {
   margin-left: 20px;
 }
+
+/* price tags */
+.price-tag {
+  font-size: 4.2rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-right: 2rem;
+}
+.price-tag--decorated {
+  font-weight: 600;
+  font-size: 4.2rem;
+  text-decoration: line-through;
+  color: var(--color-primary);
+  margin-right: 2rem;
+}
