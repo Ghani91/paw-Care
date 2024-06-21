@@ -1,0 +1,75 @@
+/* color palette */
+
+:root {
+  --color-primary: #fcc302;
+  --color-secondary: #00bec9;
+}
+
+/* box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* body font  */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2.4rem;
+  font-family: "Poppins", sans-serif;
+  padding: 4rem 4rem;
+  background-color: #000;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+h1 {
+  font-size: 6.7rem;
+  letter-spacing: 1px;
+  color: #fff;
+  font-weight: 600;
+}
+h2 {
+  font-size: 5rem;
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+}
+
+/* components section */
+
+/* button */
+.btn {
+  font-size: 2.1rem;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 7px;
+  padding: 1rem 1rem;
+  border: 0;
+  background-color: transparent;
+}
+
+.btn--primary {
+  background-color: var(--color-primary);
+}
+.btn--secondary {
+  background-color: var(--color-secondary);
+}
+.btn--secondary-rounded {
+  background-color: var(--color-secondary);
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+}
+.btn--skeleton {
+  border: 3px solid #fff;
+}
