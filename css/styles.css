@@ -426,3 +426,30 @@ a {
     align-content: center;
   }
 }
+
+/* team section */
+
+.block-team {
+  padding: 4rem auto;
+  color: #313243;
+  text-align: center;
+  height: 100%;
+}
+.block-team__heading {
+  font-size: 7.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.block-team__description {
+  font-size: 3.3rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .block-team {
+    height: 100vh;
+    align-content: center;
+    text-align: center;
+  }
+}
