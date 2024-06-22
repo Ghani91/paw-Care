@@ -45,6 +45,12 @@ a {
   text-decoration: none;
 }
 
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  height: 100vh;
+  align-content: center;
+}
 /* components section */
 
 /* button */
@@ -145,7 +151,24 @@ a {
   margin-left: 0;
   padding: 0;
 }
-
+/* video components */
+.video-component {
+  position: relative;
+}
+.video-component__vid {
+  width: 100%;
+  z-index: 9999;
+  filter: opacity(0.8);
+}
+.box {
+  width: 252px;
+  height: 206px;
+  background-color: #fcc302;
+  position: absolute;
+  right: -2rem;
+  bottom: -2rem;
+  z-index: -1;
+}
 /* navigation header */
 .nav {
   display: flex;
