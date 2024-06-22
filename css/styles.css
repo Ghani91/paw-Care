@@ -20,7 +20,7 @@ html {
 body {
   font-size: 2.4rem;
   font-family: "Poppins", sans-serif;
-  padding: 4rem 4rem;
+  /* padding: 4rem 4rem; */
 }
 h1,
 h2,
@@ -114,7 +114,6 @@ a {
 /* lists */
 
 .list {
-  color: var(--color-primary);
   list-style: none;
   margin: 0;
   padding: 0;
@@ -125,7 +124,7 @@ a {
 
 .list--inline .list__item {
   display: inline-block;
-  margin-right: 4rem;
+  margin-right: 2rem;
 }
 
 /* spcial media links */
@@ -145,4 +144,52 @@ a {
   margin-right: 2rem;
   margin-left: 0;
   padding: 0;
+}
+
+/* navigation header */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  flex-wrap: nowrap;
+  background-color: #daac00;
+  height: 10rem;
+  padding: 0 2rem;
+}
+.block-navigation__image {
+  height: 5rem;
+  cursor: pointer;
+}
+.nav a {
+  color: #fff;
+}
+/* search input */
+
+.input {
+  font-size: 2.1rem;
+  font-weight: 400;
+  padding: 0 1rem;
+  border: 0;
+  outline: 0;
+  outline: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+::placeholder {
+  color: var(--color-primary);
+}
+.input-group {
+  border: 2px solid var(--color-secondary);
+  display: flex;
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+.input-group__icon {
+  height: 25px;
+}
+.input-group .btn {
+  border-radius: 0;
+  cursor: pointer;
 }
