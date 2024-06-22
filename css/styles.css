@@ -99,6 +99,7 @@ a {
   background-color: var(--color-secondary);
   padding: 1rem 3rem;
   border-radius: 2rem;
+  margin-top: 2rem;
 }
 .btn--skeleton {
   border: 3px solid #fff;
@@ -131,15 +132,13 @@ a {
 .price-tag {
   font-size: 4.2rem;
   font-weight: 600;
-  color: var(--color-primary);
   margin-right: 2rem;
+  margin-bottom: 2rem;
 }
 .price-tag--decorated {
   font-weight: 600;
   font-size: 4.2rem;
   text-decoration: line-through;
-  color: var(--color-primary);
-  margin-right: 2rem;
 }
 
 /* lists */
@@ -384,4 +383,35 @@ a {
 .block-services__description {
   font-size: 3.3rem;
   font-weight: 400;
+}
+
+/* sales block */
+
+.block-sales {
+  background-color: var(--color-primary);
+  color: #fff;
+  text-align: center;
+}
+
+.block-sales__heading {
+  font-size: 7.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.block-sales__description {
+  font-size: 3.3rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+.sales-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .block-sales {
+    height: 100vh;
+    align-content: center;
+  }
 }
