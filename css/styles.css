@@ -176,7 +176,7 @@ a {
 .video-component__vid {
   width: 100%;
   z-index: 9999;
-  filter: opacity(0.8);
+  border-radius: 10px;
 }
 .box {
   width: 252px;
@@ -186,6 +186,7 @@ a {
   right: -2rem;
   bottom: -2rem;
   z-index: -1;
+  border-radius: 5px;
 }
 /* navigation header */
 .nav {
@@ -325,5 +326,33 @@ a {
   .hero-block {
     text-align: center;
     padding: 4rem 4rem;
+  }
+}
+
+/* section animal lover */
+.block-animalLover {
+  align-content: center;
+  border: 2px solid dodgerblue;
+  height: 100%;
+  text-align: center;
+  padding: 3rem 4rem;
+}
+.block-animalLover__heading {
+  font-size: 5rem;
+  color: #313243;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+.block-animalLover__description {
+  font-size: 2.9rem;
+  color: #313243;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .block-animalLover {
+    text-align: left;
+    height: 100vh;
   }
 }
