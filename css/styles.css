@@ -245,7 +245,6 @@ a {
 /* media card */
 .media-card {
   align-items: center;
-  color: #fff;
   justify-content: center;
   margin-right: 4rem;
   overflow: visible;
@@ -273,6 +272,18 @@ a {
   height: 300px;
 }
 
+.social-media .media-card__heading {
+  font-size: 2.9rem;
+  color: #313243;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.social-media .media-card__description {
+  font-size: 2.5rem;
+  color: #313243;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
 /* blogpost-card  */
 .blogpost-card {
   max-width: 400px;
