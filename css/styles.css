@@ -54,7 +54,7 @@ a {
 
 .grid {
   display: grid;
-  gap: 8rem 0rem;
+  gap: 4rem 0rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -66,9 +66,16 @@ a {
     gap: 0 4rem;
   }
 }
-.grid--1x2 {
-  grid-template-columns: repeat(2 1fr);
+@media screen and (min-width: 768px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 0 4rem;
+  }
 }
+
 /* components section */
 
 /* button */
@@ -238,20 +245,21 @@ a {
 
 /* media card */
 .media-card {
+  align-items: center;
   color: #fff;
-  text-align: center;
-  background-color: var(--color-primary);
-  padding: 4rem;
+  justify-content: center;
   margin-right: 4rem;
   overflow: visible;
-  justify-content: center;
-  align-items: center;
   padding: 1rem 2rem;
+  padding: 1rem;
+  text-align: center;
+  /* max-width: 350px; */
 }
 .media-card__heading {
   font-size: 3.8rem;
   font-weight: 600;
   margin-bottom: 2rem;
+  white-space: nowrap;
 }
 .media-card__description {
   font-size: 25px;
@@ -262,7 +270,8 @@ a {
   border-radius: 5px;
   margin-bottom: 2rem;
   margin-top: 2rem;
-  width: 100%;
+  width: 300px;
+  height: 300px;
 }
 
 /* blogpost-card  */
@@ -355,4 +364,24 @@ a {
     text-align: left;
     height: 100vh;
   }
+}
+
+/* services section */
+.block-services {
+  background-color: var(--color-primary);
+  height: 100%;
+  align-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 4rem 2rem;
+}
+
+.block-services__heading {
+  font-size: 7.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.block-services__description {
+  font-size: 3.3rem;
+  font-weight: 400;
 }
