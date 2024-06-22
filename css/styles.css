@@ -48,8 +48,9 @@ a {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  display: flex;
   height: 100vh;
-  align-content: center;
+  align-items: center;
 }
 /* components section */
 
@@ -215,4 +216,33 @@ a {
 .input-group .btn {
   border-radius: 0;
   cursor: pointer;
+}
+
+/* media card */
+.media-card {
+  color: #fff;
+  text-align: center;
+  background-color: var(--color-primary);
+  padding: 4rem;
+  margin-right: 4rem;
+  overflow: visible;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.media-card__heading {
+  font-size: 3.8rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.media-card__description {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.media-card__image {
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  width: 100%;
 }
